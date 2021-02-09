@@ -1,0 +1,86 @@
+
+body {
+  background-color: black;
+  font-family: 'Jura', sans-serif;
+}
+
+h1, h2, h3, .h1, .h2, .h3 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+:root{
+  --main-color: #043A6B;
+  --accent-color: #B00C0A;
+}
+
+.text-main {
+  color: var(--main-color);
+}
+
+.text-accent {
+  color: var(--accent-color);
+}
+
+.bordo {
+  border-bottom: 1px solid white;
+}
+
+.bordoRosso {
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.arrow{
+  left: 650px;
+  bottom: 20px;
+}
+
+@media (max-width: 567px) {
+.arrow{
+  left: 180px;
+  bottom: 0;
+  }
+}
+
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: linear-gradient(black 25%, transparent, black), url('./media/adf.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-header{
+  border-bottom: 1px solid var(--accent-color);
+}
+
+
+.btn-custom{
+  background: 
+  linear-gradient(to right, var(--accent-color) 2px, transparent 2px) 0 0,
+  linear-gradient(to right, var(--accent-color) 2px, transparent 2px) 0 100%,
+  linear-gradient(to left, var(--accent-color) 2px, transparent 2px) 100% 0,
+  linear-gradient(to left, var(--accent-color) 2px, transparent 2px) 100% 100%,
+  linear-gradient(to bottom, var(--accent-color) 2px, transparent 2px) 0 0,
+  linear-gradient(to bottom, var(--accent-color) 2px, transparent 2px) 100% 0,
+  linear-gradient(to top, var(--accent-color) 2px, transparent 2px) 0 100%,
+  linear-gradient(to top, var(--accent-color) 2px, transparent 2px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 10px 10px;
+}
+
+.btn-custom:hover {
+  letter-spacing: 2px;
+}
+
+.space{
+  height: 80vh;
+  min-height: 500px;
+  background-image: linear-gradient(black , transparent, black 87%), url('./media/mortenera.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+}
+
